@@ -14,5 +14,9 @@ public class Chapter01Q05 {
 		r = Integer.parseInt(br.readLine());
 		res = r * 2 * π;
 		System.out.println("원의 둘레는 " + res + "입니다.");
+		
+//		Math.PI = 파이의 절대값 3.141592.....
+		
+		br.close();
 	}
 }

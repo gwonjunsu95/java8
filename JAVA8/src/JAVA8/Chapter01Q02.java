@@ -14,5 +14,7 @@ public class Chapter01Q02 {
 		dbnum = Double.parseDouble(br.readLine());
 		System.out.println("입력한 정수는 " + intnum + "입니다.");
 		System.out.println("입력한 실수는 " + dbnum + "입니다.");
+		
+		br.close();
 	}
 }
