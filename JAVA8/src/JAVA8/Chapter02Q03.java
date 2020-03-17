@@ -1,6 +1,6 @@
 package JAVA8;
 
-public class Chapter01Q03 {
+public class Chapter02Q03 {
 	public static void main(String[] args) {
 		int year =1988;
 		int month = 05;

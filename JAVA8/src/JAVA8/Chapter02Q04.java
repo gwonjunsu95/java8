@@ -1,6 +1,6 @@
 package JAVA8;
 
-public class Chapter01Q04 {
+public class Chapter02Q04 {
 	public static void main(String[] args) {
 		int a = 8;
 		int b = 5;

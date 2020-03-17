@@ -2,7 +2,7 @@ package JAVA8;
 
 import java.util.Scanner;
 
-public class Chapter0203 {
+public class Chapter02Q08 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int w, h;
