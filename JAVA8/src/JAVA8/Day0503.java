@@ -12,13 +12,13 @@ public class Day0503 {
 		
 		if (score >= 90) {
 			pass = "A학점";
-		}  else if(score < 90 && score >= 80) {
+		}  else if( score >= 80) {
 			pass = "B학점";
-		}  else if(score < 80 && score >= 70) {
+		}  else if( score >= 70) {
 			pass = "C학점";
-		}  else if(score < 70 && score >= 60) {
+		}  else if(score >= 60) {
 			pass = "D학점";
-		}  else if(score < 60) {
+		}  else{
 			pass = "F학점";
 		}
 		
