@@ -27,26 +27,29 @@ public class Day0511 {
 			case "C":
 				user = bo;
 				break;
+			default:
+				user = "error";
 		}
 		
 		
 					
 		int num = (int)(Math.random()*3) ;
 		 switch(num) {
-			 case 0:
+			case 0:
 			 	com = ga;
 			 	break;
-			 case 1:
+			case 1:
 			 	com = ba;
 			 	break;
 		 	case 2:
 			 	com = bo;
 			 	break;
 		} 
-		
-		if ((user == ga && com == bo) || (user == ba && com == ga) || (user == bo && com == ga)){
+//		com.equals(ga); String의 자료가 같은지 확인할때사용.
+		if ((user.equals(ga) && com.equals(bo)) || (user.equals(ba) && com.equals(ga))
+				|| (user.equals(bo) && com.equals(ba))){
 			 System.out.println( "사람승! 사람:" +  user + ", 컴퓨터:" + com);
-		}  else if (user == com) {
+		}  else if (user.equals(com)) {
 			 System.out.println("비겼습니다! 사람:" + user + ", 컴퓨터:" + com);
 		} else {
 			System.out.println("컴퓨터승! 사람:" + user + ", 컴퓨터:" + com);
