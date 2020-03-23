@@ -10,7 +10,7 @@ public class Day0709 {
 				sum += i; 
 		} 
 //		int avg(average) = (double) sum / 50 ;	
-		res = sum / 50.0;
+		res = sum / 50.0;	//50D , 50F = 더블형숫자, 플롯형숫자
 		System.out.println(res + "입니다.");
 	}
 }
