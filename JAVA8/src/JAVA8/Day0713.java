@@ -9,8 +9,19 @@ public class Day0713 {
 		System.out.print("몇 줄을 출력하시겠습니까? : ");
 		int line = sc.nextInt();
 		
-		for (int i = 1; i <= line; i++) {
+		for (int i = 1; i <=line; i++) {
 			for (int j = line; j >= i; j--) {
+				if (j % 2 ==0) {
+					System.out.print("$");
+				} else {
+					System.out.print("￦");
+				}
+			}
+			System.out.println();
+		}
+		
+		for (int i = line; i > 0; i--) {
+			for (int j = 0; j < i; j++) {
 				if (j % 2 ==0) {
 					System.out.print("$");
 				} else {
