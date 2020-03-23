@@ -11,7 +11,7 @@ public class Day0703 {
 			
 		}
 		
-		System.out.println(num);
+		System.out.println(num + "ют╢о╢ы.");
 		
 	}
 }
