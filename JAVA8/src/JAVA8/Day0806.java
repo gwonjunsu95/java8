@@ -17,10 +17,10 @@ public class Day0806 {
 		for (int i = 0; i < 10; i++) {
 			num1 = (int) (Math.random() * 8) + 2;
 			num2 = rd.nextInt(9) + 1;
-			quiz = num1 * num2;
 			
-			System.out.print(num1 + "x" + num2 + "=");
+			System.out.print(i + 1+ "." + num1 + "x" + num2 + "=");
 			answer = sc.nextInt();
+			quiz = num1 * num2;
 
 			if (answer == quiz) {
 				score += 10;
