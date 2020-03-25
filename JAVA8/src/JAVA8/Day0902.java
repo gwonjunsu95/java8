@@ -104,7 +104,7 @@ public class Day0902 {
 		}
 		
 		
-		/*
+		/* ¸¶¹æÁø
 		sc.close();
 		*/
 	}
