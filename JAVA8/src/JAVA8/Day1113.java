@@ -13,14 +13,14 @@ public class Day1113 {
 		int sell = 0;
 		if (res >= 1_000_000) {
 			sell = res - (res / 10 * 4);
-			System.out.println("상품의 단가 : " + cost + "상품의 개수 : " + cnt);
+			System.out.println("상품의 단가 : " + cost + " 상품의 개수 : " + cnt);
 			System.out.println("지불 금액은 : " + (sell * cnt) +"원 이며 할인율은 40%입니다.");
 		} else if (res >= 500_000) {
 			sell = res - (res / 10 * 3);
-			System.out.println("상품의 단가 : " + cost + "상품의 개수 : " + cnt);
+			System.out.println("상품의 단가 : " + cost + " 상품의 개수 : " + cnt);
 			System.out.println("지불 금액은 : " + (sell * cnt) +"원 이며 할인율은 30%입니다.");
 		} else {
-			System.out.println("상품의 단가 : " + cost + "상품의 개수 : " + cnt);
+			System.out.println("상품의 단가 : " + cost + " 상품의 개수 : " + cnt);
 			System.out.println("지불 금액은 : " + res +"원 이며 할인은 없습니다.");
 		}
 
