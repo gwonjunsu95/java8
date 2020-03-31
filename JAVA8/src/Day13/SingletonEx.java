@@ -1,7 +1,5 @@
 package Day13;
 
-import Day12.Member;
-
 public class SingletonEx {
 
 	public static void main(String[] args) {
