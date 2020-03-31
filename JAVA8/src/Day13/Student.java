@@ -7,7 +7,7 @@ public class Student { // DAO(data access object), java bean
 	private int age; // 나이
 	private int sNo; // 학번
 
-	public String getName() {
+	public String getName() {	//우클릭 소스 get set
 		return name;
 	}
 
