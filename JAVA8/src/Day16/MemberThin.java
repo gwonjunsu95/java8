@@ -16,16 +16,15 @@ public class MemberThin implements Cloneable { // 복재하려면 cloneable 인터페이�
 		this.adult = adult;
 
 	}
-	
+
 	public MemberThin getMember() {
 		MemberThin cloned = null;
 		try {
-			cloned = (MemberThin)clone();	//clone() 메소드의 리턴 타입은 Object라서 캐스팅함.
+			cloned = (MemberThin) clone(); // clone() 메소드의 리턴 타입은 Object라서 캐스팅함.
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
 		return cloned;
 	}
-	
-	
+
 }
