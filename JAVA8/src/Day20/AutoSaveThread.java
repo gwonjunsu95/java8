@@ -12,8 +12,8 @@ public class AutoSaveThread extends Thread{
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
+				break;
 			}
-			break;
 		}
 		save();
 	}
