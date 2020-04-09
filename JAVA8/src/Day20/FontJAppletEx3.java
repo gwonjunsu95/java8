@@ -1,7 +1,5 @@
 package Day20;
 
-import java.awt.Color;
-
 import javax.swing.JFrame;
 
 public class FontJAppletEx3 {
