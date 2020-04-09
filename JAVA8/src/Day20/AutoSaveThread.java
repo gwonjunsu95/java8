@@ -14,8 +14,8 @@ public class AutoSaveThread extends Thread{
 			} catch (InterruptedException e) {
 				break;
 			}
+			save();
 		}
-		save();
 	}
 	
 }
