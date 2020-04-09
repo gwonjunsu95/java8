@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 public class DrawLineEx {
 
 	public static void main(String[] args) {
-		JFrame f = new JFrame("라인그리지");
+		JFrame f = new JFrame("라인그리기");
 
 		DrawLine p = new DrawLine();
 
