@@ -11,7 +11,7 @@ public class RoundRect extends JPanel{
 		for(int y = 1; y <= 5; y++) {
 			Color myColor = new Color(0, 0, y * 50);
 			g.setColor(myColor);
-			g.fillRect(y*30, 22, 28, 28);
+			g.fillOval(y*30, 22, 28, 28);
 		}
 		for(int y = 1; y <= 5; y++) {
 			Color myColor = new Color(0, y * 50, 0);
