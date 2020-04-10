@@ -7,6 +7,11 @@ import javax.swing.JPanel;
 
 public class Chapter0901 extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public void paint(Graphics g) {
 		g.setColor(Color.RED);
 		g.fillOval(50, 50, 150, 150);
