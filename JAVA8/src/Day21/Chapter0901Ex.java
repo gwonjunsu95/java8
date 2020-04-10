@@ -15,5 +15,15 @@ public class Chapter0901Ex {
 		t.getDefaultCloseOperation();
 		t.setVisible(true);
 		
+		Thread f = new Thread(() -> {
+			for (int i =0; i <100; i++) {
+				p.setLocation(i, i);
+				try {
+					Thread.sleep(100);
+				} catch (InterruptedException e) {
+				}
+			}
+		});
+		f.start();
 	}
 }
