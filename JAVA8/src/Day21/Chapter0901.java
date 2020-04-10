@@ -17,7 +17,7 @@ public class Chapter0901 extends JPanel {
 		g.fillArc(75, 200, 40, 40, 135, 180);
 		g.fillArc(135, 200, 40, 40, 225, 180);
 		
-		g.setColor(Color.YELLOW);
+		g.setColor(Color.orange);
 		g.fillOval(250, 250, 150, 150);
 		g.setColor(Color.MAGENTA);
 		g.fillOval(300, 300, 50, 50);
