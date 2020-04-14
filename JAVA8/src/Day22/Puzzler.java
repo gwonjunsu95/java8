@@ -13,12 +13,12 @@ import javax.swing.JPanel;
 
 public class Puzzler extends JPanel {
 
-	JLabel[] lables;
+	JLabel[] lables;		//필드생성
 	Point[] points;
 	Block[] blocks;
 	int x;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {		//실행부분
 		JFrame f = new JFrame("숫자 퍼즐");
 
 		Puzzler p = new Puzzler();
@@ -33,7 +33,7 @@ public class Puzzler extends JPanel {
 		p.shuffleGame();
 	}
 
-	void makeGame() {
+	void makeGame() {		//게임생성
 		lables = new JLabel[25];
 		points = new Point[25];
 		blocks = new Block[25];
@@ -41,7 +41,7 @@ public class Puzzler extends JPanel {
 		for (int i = 0; i < blocks.length; i++) {
 			lables[i] = new JLabel(i + 1 + "", JLabel.CENTER);
 			lables[i].setSize(50, 50);
-			lables[i].setBorder(BorderFactory.createLineBorder(Color.GREEN));
+			lables[i].setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY));
 			points[i] = new Point(i % 5 * 50, i / 5 * 50);
 			lables[i].setLocation(points[i]);
 			blocks[i] = new Block(lables[i], points[i]);
@@ -51,7 +51,7 @@ public class Puzzler extends JPanel {
 		x = blocks.length;
 	}
 
-	KeyListener getKeyListener() {
+	KeyListener getKeyListener() {			//키보드 입력시 설정
 		KeyListener listener = new KeyListener() {
 
 			@Override
@@ -67,8 +67,8 @@ public class Puzzler extends JPanel {
 			}
 
 			@Override
-			public void keyPressed(KeyEvent e) {
-				if (e.getKeyCode() == KeyEvent.VK_LEFT && x % 5 != 0) {
+			public void keyPressed(KeyEvent e) {	//눌렀을때 작동
+				if (e.getKeyCode() == KeyEvent.VK_LEFT && x % 5 != 0) {		
 					x++;
 					moveGame(x, e.getKeyCode());
 				} else if (e.getKeyCode() == KeyEvent.VK_RIGHT && x % 5 != 1) {
